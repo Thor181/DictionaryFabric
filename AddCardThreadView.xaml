@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="DictionaryFabricApplication.AddCardThreadView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DictionaryFabricApplication"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             Height="340" Width="240"  Background="{StaticResource GlobalBackgroungColor}">
+    <Grid >
+        <StackPanel>
+            <Grid d:Name="NameThread">
+                <TextBox x:Name="NameTextbox" FontSize="25" Width="250" Height="40"  VerticalAlignment="Center" HorizontalAlignment="Left"  TextAlignment="Center" Cursor="IBeam"/>
+                <TextBlock IsHitTestVisible="False" Text="Наименование" FontSize="33" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="DarkGray">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=NameTextbox}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+            <Grid d:Name="CompositionThread">
+                <TextBox x:Name="CompositionTextbox" FontSize="25" Width="250" Height="40"  VerticalAlignment="Center" HorizontalAlignment="Left"  TextAlignment="Center" Cursor="IBeam"/>
+                <TextBlock IsHitTestVisible="False" Text="Состав" FontSize="33" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="DarkGray">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=NameTextbox}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+            <Grid x:Name="GridPhoto" MouseLeftButtonDown="GridPhoto_MouseLeftButtonDown">
+                <Rectangle Fill="Gray" Height="200" Width="200"/>
+                <Rectangle Fill="{StaticResource GlobalBackgroungColor}" Height="190" Width="190"/>
+                <Rectangle Fill="{StaticResource GlobalBackgroungColor}" Height="210" Width="170"/>
+                <Rectangle Fill="{StaticResource GlobalBackgroungColor}" Height="170" Width="210"/>
+                <TextBlock Style="{StaticResource MaterialDesignHeadline3TextBlock}" Foreground="Gray" 
+                           Text="Нажмите здесь, чтобы загрузить изображение" FontSize="23" HorizontalAlignment="Center"
+                           VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Width="149" 
+                           TextTrimming="None">
+                </TextBlock>
+
+                <Image x:Name="PlaceForPhoto" Margin="40,10,40,10"  MaxHeight="190" MaxWidth="190"/>
+
+            </Grid>
+
+            <Button x:Name="AddButton" Margin="5" Content="Добавить" Click="AddButton_Click"></Button>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

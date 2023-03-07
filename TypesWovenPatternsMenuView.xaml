@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="DictionaryFabricApplication.TypesWovenPatternsMenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DictionaryFabricApplication"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="{StaticResource GlobalBackgroungColor}">
+    <UserControl.Resources>
+        <Style x:Key="ButtonsMenu" BasedOn="{StaticResource ResourceKey=MaterialDesignRaisedButton}" TargetType="Button">
+            <Setter Property="Background" Value="#FF897A7F" />
+            <Setter Property="BorderBrush" Value="#FF897A7F" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Button x:Name="GeometryButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="GeometryButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Геометрия" Foreground="White"/>
+            </Button>
+            <Button x:Name="AbstractionButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="AbstractionButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Абстракция" Foreground="White"/>
+            </Button>
+            <Button x:Name="LinesButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="LinesButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Полосы" Foreground="White"/>
+            </Button>
+            <Button x:Name="FlowersButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="FlowersButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Цветы" Foreground="White"/>
+            </Button>
+            <Button x:Name="AnimalsButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="AnimalsButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Рисунки животных" Foreground="White"/>
+            </Button>
+            
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1">
+            <Button x:Name="TexturesButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="TexturesButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Текстуры материалов" Foreground="White"/>
+            </Button>
+            <Button x:Name="NatureButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="NatureButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Природа" Foreground="White"/>
+            </Button>
+            <Button x:Name="TropicalArtButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="TropicalArtButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Тропические рисунки" Foreground="White"/>
+            </Button>
+            <Button x:Name="AnimalAndBirdsButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="AnimalAndBirdsButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Животные/птицы" Foreground="White"/>
+            </Button>
+            <Button x:Name="EticalArtsButton"
+                Style="{StaticResource ButtonsMenu}"
+                materialDesign:ButtonAssist.CornerRadius="10"
+                Click="EticalArtsButton_Click"
+                Margin="7">
+                <TextBlock
+                Text="Этнический рисунок" Foreground="White"/>
+            </Button>
+        </StackPanel>
+        <Button x:Name="BackButton" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10" Background="Transparent" BorderBrush="Transparent" Padding="0" Click="BackButton_Click">
+            <materialDesign:PackIcon Kind="HomeImportOutline"
+                                                 Width="30" Height="30" 
+                                                 FlowDirection="RightToLeft"/>
+        </Button>
+    </Grid>
+</UserControl>

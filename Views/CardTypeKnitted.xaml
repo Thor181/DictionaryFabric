@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="DictionaryFabricApplication.CardTypeKnitted"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DictionaryFabricApplication"
+             mc:Ignorable="d" 
+             Width="176" Height="220" Background="{StaticResource GlobalBackgroungColor}" Margin="5" BorderBrush="LightGray" BorderThickness="1">
+    <Grid x:Name="CardGrid" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="135"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" x:Name="CardImageTypeKnitted" Source="{Binding Image}" Margin="5" ></Image>
+        <StackPanel Grid.Row="1">
+            <TextBlock Grid.Row="1" x:Name="CardNameTypeKnitted" Text="{Binding Name}" HorizontalAlignment="Center" FontSize="20"></TextBlock>
+            <TextBlock Grid.Row="1" x:Name="CardWeaveNameTypeKnitted"  HorizontalAlignment="Center" FontSize="10">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}Переплетение: {0}">
+                        <Binding Path="WeaveName"></Binding>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+            <TextBlock Grid.Row="1" x:Name="CardCompositionTypeKnitted" HorizontalAlignment="Center" FontSize="10">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}Состав: {0}">
+                        <Binding Path="Composition"></Binding>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+            
+        </StackPanel>
+        <Button x:Name="CardButton" Grid.RowSpan="2" Height="220" Background="Transparent" BorderBrush="Transparent" Click="CardButton_Click" MouseDown="CardButton_MouseDown"></Button>
+    </Grid>
+</UserControl>

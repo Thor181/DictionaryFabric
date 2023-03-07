@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="DictionaryFabricApplication.CardThreads"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             Width="176" Height="205" Background="{StaticResource GlobalBackgroungColor}" Margin="5" BorderBrush="LightGray" BorderThickness="1">
+    <Grid x:Name="CardGrid" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" x:Name="CardImageThread" Source="{Binding Image}" Margin="5" ></Image>
+        <TextBlock Grid.Row="1" x:Name="CardNameThread" Text="{Binding Name}" HorizontalAlignment="Center" FontSize="15"></TextBlock>
+        <TextBlock Grid.Row="1" x:Name="CardCompositionThread" Text="{Binding Composition}" HorizontalAlignment="Center" FontSize="15" Margin="0 20 0 0"></TextBlock>
+        <Button x:Name="CardButton" Grid.RowSpan="2" Height="176" Background="Transparent" BorderBrush="Transparent" Click="CardButton_Click" MouseDown="CardButton_MouseDown"></Button>
+
+    </Grid>
+</UserControl>

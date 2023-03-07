@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddCardThreadView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PictureWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TypesWovenPatternsMenuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardThreads.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddCardDictionaryFabricView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddCardTypeKnittedView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddCardKnittedWeaveView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddCardTypesFabricView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddCardTypeStitchView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddCardTypeWovenPatterns.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddCardWevingWeaveView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddNewCardWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardDictionaryFabric.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardKnittedWeave.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardTypeKnitted.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardTypesFabric.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardTypeStitch.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardTypesWovenPatternsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CardWevingWeave.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MenuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SetCardsStackPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TableView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddCardThreadView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PictureWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TypesWovenPatternsMenuView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardThreads.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddCardDictionaryFabricView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddCardTypeKnittedView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddCardKnittedWeaveView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddCardTypesFabricView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddCardTypeStitchView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddCardTypeWovenPatterns.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddCardWevingWeaveView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddNewCardWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardDictionaryFabric.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardKnittedWeave.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardTypeKnitted.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardTypesFabric.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardTypeStitch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardTypesWovenPatternsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CardWevingWeave.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MenuView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResourcesDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SetCardsStackPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TableView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
