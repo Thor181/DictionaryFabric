@@ -1,4 +1,4 @@
-# DictionaryFabric
+# DictionaryFabric (old project)
 
 ![FullDictonaryFabricWPF](https://user-images.githubusercontent.com/63106764/223408467-dc2d99d1-603e-49ba-ac25-5a7243f15c89.jpg)
 
